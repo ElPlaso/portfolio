@@ -1,17 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import Details from "../components/details";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-16">
-      <div className="flex flex-col space-y-12 w-[700px] mt-16 max-md:mt-4 max-md:w-[100%] items-start justify-start">
+      <div className="flex flex-col space-y-8 w-[700px] mt-8 max-md:mt-2 max-md:w-[100%] items-start justify-start">
         <Image src="/favicon.ico" width="75" height="75" alt="icon" />
-        <div className="space-y-4 text-gray-600">
+        <div className="space-y-4 text-gray-500">
           <h1 className="text-gray-800 text-2xl font-medium">
             This site can&apos;t be reached
           </h1>
           <h3>
-            <span className="font-medium">plasokusay</span> refused to connect.
+            <span className="font-bold">plasokusay</span> refused to connect.
           </h3>
           <div>
             Try:
@@ -34,6 +35,7 @@ export default function Home() {
             Reload
           </button>
         </div>
+        <Details />
       </div>
     </main>
   );
