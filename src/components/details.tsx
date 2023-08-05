@@ -4,9 +4,11 @@ export default function Details() {
   const { detailsOpen } = useDetailsContext();
 
   return detailsOpen ? (
-    <div className="text-gray-600 flex flex-col space-y-4 w-full">
+    <div className="text-gray-600 flex flex-col space-y-4 w-full dark:text-gray-400">
       <div>
-        <h3 className="font-bold">Allow me to introduce myself.</h3>
+        <h3 className="font-bold dark:text-white">
+          Allow me to introduce myself.
+        </h3>
         <p>
           My name is Plaso, and I am an aspiring software engineer with a
           growing interest in web development. I am currently studying a major
@@ -16,7 +18,7 @@ export default function Details() {
         </p>
       </div>
       <div>
-        <h3 className="font-bold">Check out my portfolio</h3>
+        <h3 className="font-bold dark:text-white">Check out my portfolio</h3>
         <p>
           I have worked on a small number of React projects, including this one.
           These projects were mainly for learning purposes, but I hope they can
@@ -24,7 +26,9 @@ export default function Details() {
         </p>
       </div>
       <div>
-        <h3 className="font-bold">If you want to find out more...</h3>
+        <h3 className="font-bold dark:text-white">
+          If you want to find out more...
+        </h3>
         <p>
           Check out my GitHub page for other projects I have worked on,
           including non-React projects, or contact me via Email or LinkedIn.

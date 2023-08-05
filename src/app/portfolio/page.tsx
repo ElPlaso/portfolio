@@ -27,7 +27,9 @@ export default function PortfolioPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-16">
       <div className="flex flex-col space-y-8 w-[700px] mt-8 max-md:mt-2 max-md:w-[100%] items-start justify-start">
-        <h1 className="text-gray-800 text-2xl font-medium">Portfolio</h1>
+        <h1 className="text-gray-800 text-2xl font-medium dark:text-white">
+          Portfolio
+        </h1>
         <ol className="relative border-l border-gray-200 dark:border-gray-700 space-y-6">
           {projects.map((project) => (
             <li key={project.title} className="ml-4">
