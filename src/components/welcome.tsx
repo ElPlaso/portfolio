@@ -24,7 +24,7 @@ export default function Welcome() {
             <ul className="list-disc ml-10">
               <li>Checking my contacts</li>
               <li>
-                <Link className="text-blue-500" href="/">
+                <Link className="text-blue-500" href="/portfolio">
                   Checking out my portfolio
                 </Link>
               </li>
