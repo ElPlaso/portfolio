@@ -5,6 +5,7 @@ import Link from "next/link";
 import Details from "./details";
 import { DetailsProvider } from "@/contexts/details-context";
 import DetailsButton from "./details-button";
+import ReloadButton from "./reload-button";
 
 export default function Welcome() {
   return (
@@ -33,9 +34,7 @@ export default function Welcome() {
         </div>
         <div className="w-full flex flex-row justify-between">
           <DetailsButton />
-          <button className="bg-blue-500 rounded-md px-4 py-2 text-white hover:bg-blue-600">
-            Reload
-          </button>
+          <ReloadButton />
         </div>
         <Details />
       </div>
