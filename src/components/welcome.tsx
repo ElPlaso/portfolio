@@ -14,23 +14,23 @@ export default function Welcome() {
         <Image src="/favicon.ico" width="75" height="75" alt="icon" />
         <div className="space-y-4 text-gray-500">
           <h1 className="text-gray-800 text-2xl font-medium">
-            This site can&apos;t be reached
+            Welcome to my website
           </h1>
           <h3>
-            <span className="font-bold">plasokusay</span> refused to connect.
+            <span className="font-bold">plasokusay</span> is able to connect.
           </h3>
           <div>
             Try:
             <ul className="list-disc ml-10">
-              <li>Checking the connection</li>
+              <li>Checking my contacts</li>
               <li>
                 <Link className="text-blue-500" href="/">
-                  Checking the proxy and the firewall
+                  Checking out my portfolio
                 </Link>
               </li>
             </ul>
           </div>
-          <p className="text-xs">ERR_CONNECTION_REFUSED</p>
+          <p className="text-xs">SUCC_CONNECTION_ACCEPTED</p>
         </div>
         <div className="w-full flex flex-row justify-between">
           <DetailsButton />
