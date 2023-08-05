@@ -7,7 +7,7 @@ const projects: Project[] = [
     title: "Rangi",
     description:
       "Rangi (formerly Samplify) is a web app for finding samples used in your favourite songs and albums. It consumes a Genius Song Lyrics API. This was my first Next.js project and I started it when the app router was still in beta. The word rangi means tune, air, melody, tenor, drift. This was initially a recreation of a uni group project that was made with ejs and express.",
-    href: "https://rangi.vercel.app",
+    href: "https://rangi.beatbotanica.com",
   },
   {
     title: "BiblioSort",
