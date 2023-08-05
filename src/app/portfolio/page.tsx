@@ -26,7 +26,7 @@ const projects: Project[] = [
 export default function PortfolioPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-16">
-      <div className="flex flex-col space-y-8 w-[700px] mt-8 max-md:mt-2 max-md:w-[100%] items-start justify-start">
+      <div className="flex flex-col space-y-8 w-[700px] mt-8 max-md:mt-2 max-md:w-[100%] items-start justify-start mb-16">
         <h1 className="text-gray-800 text-2xl font-medium dark:text-white">
           Portfolio
         </h1>
