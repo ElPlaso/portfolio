@@ -1,5 +1,9 @@
+import { useDetailsContext } from "@/contexts/details-context";
+
 export default function Details() {
-  return (
+  const { detailsOpen } = useDetailsContext();
+
+  return detailsOpen ? (
     <div className="text-gray-600 flex flex-col space-y-4 w-full">
       <div>
         <h3 className="font-bold">Allow me to introduce myself.</h3>
@@ -48,5 +52,7 @@ export default function Details() {
         </li>
       </ul>
     </div>
+  ) : (
+    <></>
   );
 }
