@@ -9,7 +9,9 @@ export default function ProjectListItem({ project }: { project: Project }) {
       <h3 className="text-lg mb-2 font-semibold text-gray-900 dark:text-white ">
         {project.title}
       </h3>
-      {project.badges.map((badge) => Badge({ label: badge }))}
+      {project.badges.map((badge) => (
+        <Badge key={badge} label={badge} />
+      ))}
       <p className="text-base mb-4 mt-2 font-normal text-gray-500 dark:text-gray-400">
         {project.description}
       </p>

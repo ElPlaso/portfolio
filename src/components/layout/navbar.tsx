@@ -3,7 +3,7 @@ import NavBarLink from "./navbar-link";
 
 const navbarLinks = [
   { title: "Portfolio", href: "/portfolio" },
-  { title: "Timeline", href: "/timeline" },
+  { title: "Experience", href: "/experience" },
 ];
 
 export default function NavBar() {
