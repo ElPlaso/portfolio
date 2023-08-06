@@ -1,6 +1,5 @@
 import ProjectListItem from "@/components/project-list-item";
 import Project from "@/types/project";
-import Link from "next/link";
 
 const projects: Project[] = [
   {
@@ -28,22 +27,17 @@ const projects: Project[] = [
 
 export default function PortfolioPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-16 max-sm:p-4">
-      <div className="flex flex-col space-y-8 w-[700px] mt-8 max-md:mt-2 max-md:w-[100%] items-start justify-start mb-16">
-        <h1 className="text-gray-800 text-2xl font-medium dark:text-white">
-          Portfolio
-        </h1>
-        <ol className="relative border-l border-gray-200 dark:border-gray-700 space-y-6">
-          {projects.map((project) => (
-            <li key={project.title} className="ml-4">
-              <ProjectListItem project={project} />
-            </li>
-          ))}
-        </ol>
-      </div>
-      <Link href="/" className="text-blue-500 hover:underline">
-        Go Back
-      </Link>
-    </main>
+    <>
+      <h1 className="text-gray-800 text-2xl font-medium dark:text-white mb-4">
+        Personal Web Projects
+      </h1>
+      <ol className="relative border-l border-gray-200 dark:border-gray-700 space-y-6">
+        {projects.map((project) => (
+          <li key={project.title} className="ml-4">
+            <ProjectListItem project={project} />
+          </li>
+        ))}
+      </ol>
+    </>
   );
 }
