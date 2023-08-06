@@ -34,7 +34,7 @@ export default function Details() {
           including non-React projects, or contact me via Email or LinkedIn.
         </p>
       </div>
-      <ul className="list-disc ml-10">
+      <ul className="list-disc ml-10 break-all">
         <li>
           <span className="hover:underline">
             <a href="https://github.com/ElPlaso" target="_blank">

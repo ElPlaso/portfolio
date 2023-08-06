@@ -31,7 +31,7 @@ export default function Welcome() {
           <div>
             Try:
             <ul className="list-disc ml-10">
-              <li>Checking my contacts</li>
+              <li>Checking my contact info</li>
               <li>
                 <Link
                   className="text-blue-500 hover:underline"
