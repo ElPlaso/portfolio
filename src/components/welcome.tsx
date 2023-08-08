@@ -10,7 +10,7 @@ import ReloadButton from "./reload-button";
 export default function Welcome() {
   return (
     <DetailsProvider>
-      <div className="space-y-8">
+      <div className="space-y-8 w-full">
         <div className="flex flex-row">
           <a href="/cv.pdf" target="_blank">
             <Image
