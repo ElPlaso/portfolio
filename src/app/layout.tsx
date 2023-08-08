@@ -15,8 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="snap-y snap-mandatory overflow-y-scroll">
+      <body className={`${inter.className} snap-y snap-mandatory`}>
+        {children}
+      </body>
     </html>
   );
 }
