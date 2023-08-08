@@ -4,7 +4,7 @@ export default function Details() {
   const { detailsOpen } = useDetailsContext();
 
   return detailsOpen ? (
-    <div className="text-gray-600 flex flex-col space-y-4 w-full dark:text-gray-400">
+    <div className="text-gray-600 flex flex-col space-y-4 w-full dark:text-gray-400 max-sm:text-sm">
       <div>
         <h3 className="font-bold dark:text-white">
           Allow me to introduce myself.

@@ -78,7 +78,7 @@ const experiences: Experience[] = [
 export default function ExperiencePage() {
   return (
     <>
-      <h1 className="text-gray-800 text-2xl font-medium dark:text-white mb-4">
+      <h1 className="text-gray-800 text-2xl font-medium dark:text-white mb-4 max-sm:text-xl">
         Work & Education
       </h1>
       <ol className="relative border-l border-gray-200 dark:border-gray-700 space-y-6">
