@@ -1,11 +1,29 @@
 import Welcome from "@/components/welcome";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-16 max-sm:pt-8 max-sm:px-4">
-      <div className="flex flex-col space-y-8 w-[700px] mt-8 max-md:mt-2 max-md:w-[100%] items-start justify-start max-sm:px-1">
-        <Welcome />
-      </div>
-    </main>
+    <div className="p-4 w-full">
+      <div className="w-full flex flex-row justify-end">
+          <Link href="/portfolio">
+            <svg
+              className="w-6 h-6 text-gray-500 dark:text-white hover:text-blue-500 space-x-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </Link>
+        </div>
+      <Welcome />
+    </div>
   );
 }
