@@ -11,16 +11,18 @@ export default function Welcome() {
   return (
     <DetailsProvider>
       <div className="space-y-8">
-        <a href="/cv.pdf" target="_blank">
-          <Image
-            src="/favicon.ico"
-            width="75"
-            height="95"
-            alt="icon"
-            className="hover:shadow-lg hover:ring-4 hover:ring-blue-100 rounded-sm"
-            title="Download CV"
-          />
-        </a>
+        <div className="flex flex-row">
+          <a href="/cv.pdf" target="_blank">
+            <Image
+              src="/favicon.ico"
+              width="75"
+              height="95"
+              alt="icon"
+              className="hover:shadow-lg hover:ring-4 hover:ring-blue-100 rounded-sm"
+              title="Download CV"
+            />
+          </a>
+        </div>
         <div className="space-y-4 text-gray-500 dark:text-gray-400">
           <h1 className="text-gray-800 text-2xl font-medium dark:text-white">
             Welcome to my website
