@@ -1,11 +1,10 @@
 import Project from "@/types/project";
 import Badge from "./badge";
+import TimeLineCard from "./shared/timeline-card";
 
 export default function ProjectListItem({ project }: { project: Project }) {
   return (
-    <>
-      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-
+    <TimeLineCard>
       <h3 className="text-lg mb-2 font-semibold text-gray-900 dark:text-white ">
         {project.title}
       </h3>
@@ -38,6 +37,6 @@ export default function ProjectListItem({ project }: { project: Project }) {
           />
         </svg>
       </a>
-    </>
+    </TimeLineCard>
   );
 }
