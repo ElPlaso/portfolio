@@ -16,7 +16,7 @@ const experiences: Experience[] = [
     date: "2023",
     place: "Victoria University of Wellington",
     description:
-      "For the group project in my fourth year Human Computer Interaction course, we were tasked with creating an interactive web application with D3 (or similar library) which let users discover and interact with data relating to the United Nations Sustainable Development Goals. Our group chose to focus on the goal of responsible consumption and production. We created a web application that allowed users to explore the energy consumption of different countries over time. We each contributed a page which had a different visualisation of the data. I created a country page which displayed the energy consumption of an individual country over different years in the form of a bar chart. Users could select a year in the timeline or click a play button to see the bar chart animate over time.",
+      "Our group, as part of our Human Computer Interaction course, created an interactive web application with D3 which let users discover and interact with data relating to one of the UN's Sustainable Development Goals. Our group focused on responsible consumption and production. Our app allowed users to explore the energy consumption of different countries over time. The page I contributed displayed the energy consumption of a given individual country over different years in the form of a bar chart. Users could select from the timeline or click play to see the chart animate over time.",
     types: ["education"],
     skills: ["Teamwork", "D3", "Typescript"],
   },
@@ -34,7 +34,7 @@ const experiences: Experience[] = [
     date: "2022",
     place: "Victoria University of Wellington",
     description:
-      "I was involved in a group project for my Mobile Applications course. Our group developed an app using Flutter and Firebase that allowed users to create and share business cards which could be scanned by other users. My main role in the group was in front-end development.",
+      "Our group, as part of our mobile applications course, developed an app using Flutter and Firebase that allowed users to create and share business cards which could be scanned by other users. My main role in the group was in front-end development.",
     types: ["education"],
     skills: ["Teamwork", "Communication", "Flutter", "GitLab", "Firebase"],
   },
