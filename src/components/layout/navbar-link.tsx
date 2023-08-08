@@ -8,6 +8,11 @@ import { usePathname } from "next/navigation";
 export default function NavBarLink({ navbarLink }: { navbarLink: NavBarLink }) {
   const pathname = usePathname();
   const isActive = navbarLink.href === pathname;
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <Link
       href={navbarLink.href}
@@ -15,8 +20,9 @@ export default function NavBarLink({ navbarLink }: { navbarLink: NavBarLink }) {
         "inline-block p-4 relative " +
         (isActive
           ? "text-blue-600  dark:text-blue-500 "
-          : "hover:text-gray-600  dark:hover:text-gray-300 active:text-blue-500  dark:active:text-blue-400")
+          : "hover:text-gray-600  dark:hover:text-gray-300 active:text-gray-500  dark:active:text-grayZ-400")
       }
+      onClick={scrollToTop}
       aria-current="page"
     >
       {isActive && (
