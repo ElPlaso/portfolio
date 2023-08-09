@@ -28,6 +28,7 @@ body {
 
 html {
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 body::-webkit-scrollbar {
