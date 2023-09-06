@@ -1,20 +1,30 @@
 import { useDetailsContext } from "@/contexts/details-context";
+import Image from "next/image";
 
 export default function Details() {
   const { detailsOpen } = useDetailsContext();
 
   return detailsOpen ? (
     <div className="text-gray-600 flex flex-col space-y-4 w-full dark:text-gray-400 max-md:fixed max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:z-10 max-md:p-4 max-md:transition-transform max-md:bg-white max-md:dark:bg-gray-800 max-md:transform-none max-md:h-screen max-sm:pb-56 max-md:pb-16 max-sm:pt-24 max-md:overflow-y-scroll">
-      <div>
+      <div className="space-y-4">
         <h3 className="font-bold dark:text-white">
           Allow me to introduce myself.
         </h3>
+        <Image
+          src="/images/profile.jpg"
+          alt="Plaso Kusay"
+          width={200}
+          height={200}
+          className="rounded-lg shadow-xl object-cover h-[200px] w-[200px]"
+        />
         <p>
-          My name is Plaso, and I am an aspiring software engineer with a
-          growing interest in web development. I am currently studying a major
-          in Software Engineering at Victoria University of Wellington,
-          specialising in Network Engineering. I enjoy skateboarding, playing
-          bass, and playing chess amongst other things.
+          My name is Moo Plah Soe (Plaso) Kusay, and I am an aspiring software
+          engineer with a growing interest in web development. I am currently
+          studying for a major in Software Engineering at Victoria University of
+          Wellington, specialising in Networked Applications, and I am in my final
+          year. I enjoy skateboarding, playing bass, and playing chess, among
+          other things. Feel free to navigate the rest of my site to learn more
+          about my projects and experiences.
         </p>
       </div>
       <div>
