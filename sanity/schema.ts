@@ -53,12 +53,12 @@ export const schema: { types: SchemaTypeDefinition[] } = {
         }),
         defineField({
           name: "location",
-          title: "location",
+          title: "Location",
           type: "string",
         }),
         defineField({
           name: "links",
-          title: "Link",
+          title: "Links",
           type: "array",
           // @ts-ignore
           of: [{ type: "string" }],
