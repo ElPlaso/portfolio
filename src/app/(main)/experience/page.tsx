@@ -13,7 +13,6 @@ async function getExperiences(): Promise<Experience[]> {
   // convert to Experience type
 
   const experiences: Experience[] = experienceDocuments.map((experience) => {
-    console.log(experience.skills, experience.tags);
 
     return {
       title: experience.title,

@@ -23,6 +23,7 @@ export const getAllExperiences = groq`
     links,
     types,
     skills,
+    tags,
     date,
     _createdAt,
     _updatedAt,
