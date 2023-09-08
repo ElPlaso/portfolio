@@ -30,6 +30,24 @@ export default function ExperienceListItem({
           ))}
         </div>
       </div>
+      {/* TODO: handle multiple links overflowing */}
+      {experience.links && (
+        <div className="space-x-2 flex flex-row max-sm:flex-col max-sm:space-x-0 max-sm:text-sm mt-2">
+          <span className="font-medium max-sm:mb-2">Resources:</span>
+          <div className="flex flex-col">
+            {experience.links.map((link) => (
+              <a
+                key={link}
+                href={link}
+                target="_blank"
+                className="text-blue-500 hover:underline"
+              >
+                {link}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </TimeLineCard>
   );
 }
