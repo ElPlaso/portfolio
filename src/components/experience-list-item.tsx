@@ -30,7 +30,6 @@ export default function ExperienceListItem({
           ))}
         </div>
       </div>
-      {/* TODO: handle multiple links overflowing */}
       {experience.links && (
         <div className="space-x-2 flex flex-row max-sm:flex-col max-sm:space-x-0 max-sm:text-sm mt-2">
           <span className="font-medium max-sm:mb-2">Resources:</span>
@@ -40,7 +39,7 @@ export default function ExperienceListItem({
                 key={link}
                 href={link}
                 target="_blank"
-                className="text-blue-500 hover:underline"
+                className="text-blue-500 hover:underline max-w-[500px] max-sm:max-w-[250px] truncate"
               >
                 {link}
               </a>
