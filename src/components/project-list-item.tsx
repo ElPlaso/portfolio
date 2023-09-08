@@ -1,10 +1,21 @@
 import Project from "@/types/project";
 import Badge from "./badge";
 import TimeLineCard from "./shared/timeline-card";
+import Image from "next/image";
 
 export default function ProjectListItem({ project }: { project: Project }) {
   return (
     <TimeLineCard>
+      <div className="w-full mb-4 mt-2">
+        <Image
+          src={project.imageUrl ? project.imageUrl : "/images/default.png"}
+          alt={`${project.title} image`}
+          height={1500}
+          width={1500}
+          className="h-[250px] w-full shadow-lg object-cover object-top rounded-lg"
+        />
+      </div>
+
       <h3 className="text-lg mb-2 mt-1 font-semibold text-gray-900 dark:text-white max-sm:text-sm ">
         {project.title}
       </h3>

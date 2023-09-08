@@ -10,6 +10,7 @@ export const getAllProjects = groq`
     tags,
     _createdAt,
     _updatedAt,
+    "imageUrl": mainImage.asset->url
   }
 `;
 

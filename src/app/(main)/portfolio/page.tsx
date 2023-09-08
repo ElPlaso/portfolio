@@ -17,6 +17,7 @@ async function getProjects(): Promise<Project[]> {
       description: project.description,
       href: project.link,
       badges: project.tags,
+      imageUrl: project.imageUrl,
     };
   });
 

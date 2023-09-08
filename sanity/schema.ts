@@ -32,6 +32,14 @@ export const schema: { types: SchemaTypeDefinition[] } = {
           // @ts-ignore
           of: [{ type: "string" }],
         }),
+        defineField({
+          name: 'mainImage',
+          title: 'Main image',
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+        }),
       ],
     },
     {
