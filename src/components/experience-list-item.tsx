@@ -12,7 +12,7 @@ export default function ExperienceListItem({
       <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 max-sm:text-xs">
         {experience.date}
       </time>
-      <h3 className="text-lg max-sm:text-sm mb-2 font-semibold text-gray-900 dark:text-white ">
+      <h3 className="text-lg max-sm:text-sm font-semibold text-gray-900 dark:text-white ">
         {experience.title}
       </h3>
       {experience.types?.map((type) => (
@@ -22,8 +22,8 @@ export default function ExperienceListItem({
         {experience.description}
       </p>
 
-      <div className="space-x-2 flex flex-row max-sm:flex-col max-sm:space-x-0 max-sm:text-sm">
-        <span className="font-medium max-sm:mb-2">Skills:</span>
+      <div className="space-y-2 max-sm:flex-col max-sm:text-sm">
+        <span className="font-medium">Skills</span>
         <div className="flex flex-row max-sm:grid max-sm:grid-cols-3 gap-2 items-center ">
           {experience.skills?.map((skill) => (
             <Badge key={skill} label={skill} />
@@ -31,8 +31,8 @@ export default function ExperienceListItem({
         </div>
       </div>
       {experience.links && (
-        <div className="space-x-2 flex flex-row max-sm:flex-col max-sm:space-x-0 max-sm:text-sm mt-2">
-          <span className="font-medium max-sm:mb-2">Resources:</span>
+        <div className="max-sm:flex-col max-sm:text-sm mt-2">
+          <span className="font-medium">Resources</span>
           <div className="flex flex-col">
             {experience.links.map((link) => (
               <a
