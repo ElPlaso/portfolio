@@ -19,7 +19,7 @@ export default function NavBarLink({ navbarLink }: { navbarLink: NavBarLink }) {
       className={
         "inline-block p-4 relative " +
         (isActive
-          ? "text-blue-600  dark:text-blueDark "
+          ? "text-blue-600 dark:text-blueDark "
           : "hover:text-gray-600  dark:hover:text-blueDarkFill")
       }
       onClick={scrollToTop}
