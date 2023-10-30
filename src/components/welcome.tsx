@@ -26,8 +26,8 @@ export default function Welcome() {
                 />
               </a>
             </div>
-            <div className="space-y-4 text-gray-500 dark:text-gray-400">
-              <h1 className="text-gray-800 text-2xl font-medium dark:text-white">
+            <div className="space-y-4">
+              <h1 className="text-black dark:text-grayDark text-2xl font-medium">
                 Welcome to my website
               </h1>
               <h3>
@@ -40,7 +40,7 @@ export default function Welcome() {
                   <li>Checking my contact info</li>
                   <li>
                     <Link
-                      className="text-blue-500 hover:underline"
+                      className="text-blue-500 dark:text-blueDark hover:underline"
                       href="/portfolio"
                     >
                       Checking out my portfolio

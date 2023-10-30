@@ -9,16 +9,16 @@ export default function ExperienceListItem({
 }) {
   return (
     <TimeLineCard>
-      <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 max-sm:text-xs">
+      <time className="mb-1 text-sm font-normal leading-none max-sm:text-xs">
         {experience.date}
       </time>
-      <h3 className="text-lg max-sm:text-sm font-semibold text-gray-900 dark:text-white ">
+      <h3 className="text-lg max-sm:text-sm font-semibold text-black dark:text-grayDark ">
         {experience.title}
       </h3>
       {experience.types?.map((type) => (
         <Badge key={type} label={type} />
       ))}
-      <p className="text-base mb-4 mt-2 font-normal text-gray-500 dark:text-gray-400 max-sm:text-sm">
+      <p className="text-base mb-4 mt-2 font-normal max-sm:text-sm dark:text-grayDarkSecondary">
         {experience.description}
       </p>
 
@@ -39,7 +39,7 @@ export default function ExperienceListItem({
                 key={link}
                 href={link}
                 target="_blank"
-                className="text-blue-500 hover:underline max-w-[500px] max-sm:max-w-[250px] truncate"
+                className="text-blue-500 dark:text-blueDark hover:underline max-w-[500px] max-sm:max-w-[250px] truncate"
               >
                 {link}
               </a>
