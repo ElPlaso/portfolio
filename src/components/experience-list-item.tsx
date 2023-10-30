@@ -39,7 +39,7 @@ export default function ExperienceListItem({
                 key={link}
                 href={link}
                 target="_blank"
-                className="text-blue-500 hover:underline max-w-[500px] max-sm:max-w-[250px] truncate"
+                className="text-blue-500 dark:text-blueDark hover:underline max-w-[500px] max-sm:max-w-[250px] truncate"
               >
                 {link}
               </a>

@@ -34,9 +34,9 @@ export default function ProjectListItem({ project }: { project: Project }) {
           mt-4 px-4 py-2 text-sm font-medium 
           bg-white border border-gray-200 
           rounded-lg hover:bg-gray-100 
-          hover:text-blue-700 focus:z-10 
+          hover:text-blue-500 focus:z-10 
           focus:ring-4 focus:outline-none 
-          focus:ring-gray-200 focus:text-blue-700 
+          focus:ring-gray-200 focus:text-blue-600 
           dark:focus:text-blueDark
           dark:bg-grayDarkFill dark:border-gray-600 
           dark:hover:text-blueDarkFill dark:hover:bg-grayDarkFill
