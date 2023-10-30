@@ -15,7 +15,11 @@ module.exports = {
       colors: {
         grayDark: "#9AA0A6",
         grayDarkSecondary: "#666666",
+        grayDarkFill: "#303339",
+        darkBackground: "#202124",
         grayLight: "#5F6368",
+        blueDark: "#8AB4F8",
+        blueDarkFill: "#81A2D0",
       },
     },
   },
