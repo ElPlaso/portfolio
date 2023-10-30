@@ -40,7 +40,7 @@ export default function Welcome() {
                   <li>Checking my contact info</li>
                   <li>
                     <Link
-                      className="text-blue-500 hover:underline"
+                      className="text-blue-500 dark:text-blueDark hover:underline"
                       href="/portfolio"
                     >
                       Checking out my portfolio

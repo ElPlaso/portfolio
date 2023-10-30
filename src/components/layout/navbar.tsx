@@ -8,10 +8,10 @@ const navbarLinks = [
 
 export default function NavBar() {
   return (
-    <nav className="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600 flex flex-row justify-between items-center dark:px-4 max-md:px-2 dark:py-1 dark:rounded-lg max-md:rounded-none">
+    <nav className="bg-white dark:bg-grayDarkFill sticky w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600 flex flex-row justify-between items-center dark:px-4 max-md:px-2 dark:py-1 dark:rounded-lg max-md:rounded-none">
       <Link href="/">
         <svg
-          className="w-6 h-6 text-gray-500 dark:text-white hover:text-blue-500 space-x-2"
+          className="w-6 h-6 hover:text-blueDark space-x-2"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -26,7 +26,7 @@ export default function NavBar() {
           />
         </svg>
       </Link>
-      <div className="text-sm font-medium text-center text-gray-500">
+      <div className="text-sm font-medium text-center">
         <ul className="flex flex-wrap -mb-px space-x-2">
           {navbarLinks.map((navbarLink) => (
             <li key={navbarLink.title}>
