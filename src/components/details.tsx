@@ -5,7 +5,15 @@ export default function Details() {
   const { detailsOpen } = useDetailsContext();
 
   return detailsOpen ? (
-    <div className="flex flex-col space-y-4 w-full max-md:fixed max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:z-10 max-md:p-4 max-md:transition-transform max-md:bg-white max-md:dark:bg-gray-800 max-md:transform-none max-md:h-screen max-sm:pb-56 max-md:pb-16 max-sm:pt-24 max-md:overflow-y-scroll">
+    <div
+      className={`flex flex-col space-y-4 w-full 
+      max-md:fixed max-md:bottom-0 max-md:left-0 
+      max-md:right-0 max-md:z-10 max-md:p-4 
+      max-md:transition-transform max-md:bg-white 
+      max-md:dark:bg-darkBackground max-md:transform-none 
+      max-md:h-screen max-sm:pb-56 max-md:pb-16 max-sm:pt-24
+      max-md:overflow-y-scroll`}
+    >
       <div className="space-y-4">
         <h3 className="font-bold">Allow me to introduce myself.</h3>
         <Image
