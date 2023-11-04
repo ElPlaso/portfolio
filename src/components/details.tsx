@@ -16,13 +16,6 @@ export default function Details() {
     >
       <div className="space-y-4">
         <h3 className="font-bold">Allow me to introduce myself.</h3>
-        <Image
-          src="/images/profile.jpg"
-          alt="Plaso Kusay"
-          width={200}
-          height={200}
-          className="rounded-lg shadow-xl object-cover h-[200px] w-[200px]"
-        />
         <p className="dark:text-grayDarkSecondary">
           My name is Moo Plah Soe (Plaso) Kusay, and I am an aspiring software
           engineer with a growing interest in web development. I am currently
