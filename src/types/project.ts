@@ -3,4 +3,5 @@ export default interface Project {
     description: string;
     href: string;
     badges: string[];
+    imageUrl?: string;
 }

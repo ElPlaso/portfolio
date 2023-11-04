@@ -26,8 +26,8 @@ export default function Welcome() {
                 />
               </a>
             </div>
-            <div className="space-y-4 text-gray-500 dark:text-gray-400">
-              <h1 className="text-gray-800 text-2xl font-medium dark:text-white">
+            <div className="space-y-4">
+              <h1 className="text-black dark:text-grayDark text-2xl font-medium">
                 Welcome to my website
               </h1>
               <h3>
@@ -40,7 +40,7 @@ export default function Welcome() {
                   <li>Checking my contact info</li>
                   <li>
                     <Link
-                      className="text-blue-500 hover:underline"
+                      className="text-blue-500 dark:text-blueDark hover:underline"
                       href="/portfolio"
                     >
                       Checking out my portfolio
@@ -52,7 +52,16 @@ export default function Welcome() {
             </div>
           </div>
         </PageWrapper>
-        <div className="w-full flex flex-row justify-between max-sm:flex-col-reverse max-sm:space-y-4 max-md:fixed max-md:bottom-0 max-md:pb-4 max-md:left-0 max-md:px-4 max-md:bg-gradient-to-t max-md:from-white max-md:to-transparent max-md:via-white dark:max-md:via-black dark:max-md:from-black dark:max-md:to-transparent max-md:z-40">
+        <div
+          className={`w-full flex flex-row
+            justify-between max-sm:flex-col-reverse
+            max-sm:space-y-4 max-md:fixed max-md:bottom-0
+            max-md:pb-4 max-md:left-0 max-md:px-4 
+            max-md:bg-gradient-to-t max-md:from-white 
+            max-md:to-transparent max-md:via-white
+            dark:max-md:via-darkBackground dark:max-md:from-darkBackground
+            dark:max-md:to-transparent max-md:z-40`}
+        >
           <DetailsButton />
           <ReloadButton />
         </div>

@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="max-sm:snap-y max-sm:snap-mandatory scroll-auto">
+    <html lang="en" className="snap-y scroll-auto">
       <body className={inter.className}>{children}</body>
       <Analytics />
     </html>

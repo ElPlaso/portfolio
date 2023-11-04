@@ -10,6 +10,7 @@ export const getAllProjects = groq`
     tags,
     _createdAt,
     _updatedAt,
+    "imageUrl": mainImage.asset->url
   }
 `;
 
@@ -23,6 +24,7 @@ export const getAllExperiences = groq`
     links,
     types,
     skills,
+    tags,
     date,
     _createdAt,
     _updatedAt,

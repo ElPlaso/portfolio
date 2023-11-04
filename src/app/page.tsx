@@ -8,7 +8,7 @@ export default function Home() {
         <div className="w-full flex flex-row justify-end">
           <Link href="/portfolio">
             <svg
-              className="w-6 h-6 text-gray-500 dark:text-white hover:text-blue-500 space-x-2"
+              className="w-6 h-6 hover:text-blue-500 dark:hover:text-blueDark space-x-2"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
