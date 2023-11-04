@@ -4,6 +4,11 @@ import { SanityDocument } from "@sanity/client";
 import { getAllExperiences } from "@/../sanity/lib/queries";
 import { sanityFetch } from "@/../sanity/lib/sanityFetch";
 import { sortExperiencesByDate } from "@/lib/utils";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Experience | Plaso Kusay",
+};
 
 async function getExperiences(): Promise<Experience[]> {
   const experienceDocuments = await sanityFetch<SanityDocument[]>({

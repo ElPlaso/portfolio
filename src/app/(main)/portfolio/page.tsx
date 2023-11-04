@@ -3,6 +3,11 @@ import Project from "@/types/project";
 import { SanityDocument } from "@sanity/client";
 import { getAllProjects } from "@/../sanity/lib/queries";
 import { sanityFetch } from "@/../sanity/lib/sanityFetch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portfolio | Plaso Kusay",
+};
 
 async function getProjects(): Promise<Project[]> {
   const projectDocuments = await sanityFetch<SanityDocument[]>({
