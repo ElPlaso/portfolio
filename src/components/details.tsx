@@ -14,7 +14,7 @@ export default function Details() {
       max-md:h-screen max-sm:pb-56 max-md:pb-16 max-sm:pt-24
       max-md:overflow-y-scroll`}
     >
-      <div className="space-y-4">
+      <div>
         <h3 className="font-bold">Allow me to introduce myself.</h3>
         <p className="dark:text-grayDarkSecondary">
           My name is Moo Plah Soe (Plaso) Kusay, and I am an aspiring software
