@@ -1,31 +1,20 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import Details from "./details";
 import { DetailsProvider } from "@/contexts/details-context";
 import DetailsButton from "./details-button";
 import ReloadButton from "./reload-button";
 import PageWrapper from "./layout/page-wrapper";
+import Banner from "./banner";
 
 export default function Welcome() {
   return (
     <DetailsProvider>
       <div className="space-y-8 w-full">
         <PageWrapper>
-          <div className="space-y-8">
-            <div className="flex flex-row">
-              <a href="/cv.pdf" target="_blank">
-                <Image
-                  src="/favicon.ico"
-                  width="75"
-                  height="95"
-                  alt="icon"
-                  className="hover:shadow-lg hover:ring-4 hover:ring-blue-100 rounded-sm"
-                  title="Download CV"
-                />
-              </a>
-            </div>
+          <div className="space-y-16">
+            <Banner />
             <div className="space-y-4">
               <h1 className="text-black dark:text-grayDark text-2xl font-medium">
                 Welcome to my website
