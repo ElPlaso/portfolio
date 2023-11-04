@@ -5,42 +5,41 @@ import Details from "./details";
 import { DetailsProvider } from "@/contexts/details-context";
 import DetailsButton from "./details-button";
 import ReloadButton from "./reload-button";
-import PageWrapper from "./layout/page-wrapper";
+import AnimationWrapper from "./layout/animation-wrapper";
 import Banner from "./banner";
 
 export default function Welcome() {
   return (
     <DetailsProvider>
       <div className="space-y-8 w-full">
-        <PageWrapper>
-          <div className="space-y-16">
+        <div className="space-y-16">
+          <AnimationWrapper>
             <Banner />
-            <div className="space-y-4">
-              <h1 className="text-black dark:text-grayDark text-2xl font-medium">
-                Welcome to my website
-              </h1>
-              <h3>
-                <span className="font-bold">plasokusay</span> is able to
-                connect.
-              </h3>
-              <div>
-                Try:
-                <ul className="list-disc ml-10">
-                  <li>Checking my contact info</li>
-                  <li>
-                    <Link
-                      className="text-blue-500 dark:text-blueDark hover:underline"
-                      href="/portfolio"
-                    >
-                      Checking out my portfolio
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <p className="text-xs">SUCC_CONNECTION_ACCEPTED</p>
+          </AnimationWrapper>
+          <div className="space-y-4">
+            <h1 className="text-black dark:text-grayDark text-2xl font-medium">
+              Welcome to my website
+            </h1>
+            <h3>
+              <span className="font-bold">plasokusay</span> is able to connect.
+            </h3>
+            <div>
+              Try:
+              <ul className="list-disc ml-10">
+                <li>Checking my contact info</li>
+                <li>
+                  <Link
+                    className="text-blue-500 dark:text-blueDark hover:underline"
+                    href="/portfolio"
+                  >
+                    Checking out my portfolio
+                  </Link>
+                </li>
+              </ul>
             </div>
+            <p className="text-xs">SUCC_CONNECTION_ACCEPTED</p>
           </div>
-        </PageWrapper>
+        </div>
         <div
           className={`w-full flex flex-row
             justify-between max-sm:flex-col-reverse

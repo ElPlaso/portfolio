@@ -1,5 +1,5 @@
 import NavBar from "@/components/layout/navbar";
-import PageWrapper from "@/components/layout/page-wrapper";
+import AnimationWrapper from "@/components/layout/animation-wrapper";
 
 export default function RootLayout({
   children,
@@ -11,7 +11,7 @@ export default function RootLayout({
       <div className="flex flex-col space-y-8 w-[700px] selection:max-md:mt-0 max-md:w-[100%] items-start justify-start">
         <NavBar />
         <div className="px-4">
-          <PageWrapper>{children}</PageWrapper>
+          <AnimationWrapper>{children}</AnimationWrapper>
         </div>
       </div>
     </main>
