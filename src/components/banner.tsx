@@ -16,8 +16,9 @@ export default function Banner() {
         width={175}
         height={175}
         className={`
+          bg:white dark:bg-darkBackground
           rounded-full border-white
-        dark:border-darkBackground border-4
+          dark:border-darkBackground border-4
           object-cover h-[175px] w-[175px]
           absolute left-[25px] max-sm:left-[50%]
           max-sm:translate-x-[-50%] top-[33%]
