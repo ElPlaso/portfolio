@@ -39,7 +39,7 @@ export default async function ExperiencePage() {
 
   return (
     <>
-      <h1 className="text-black text-2xl font-medium dark:text-grayDark mb-4 max-sm:text-xl snap-end shrink-0">
+      <h1 className="text-black text-2xl font-medium dark:text-grayDark mb-4 max-sm:text-xl shrink-0">
         Work & Education
       </h1>
       <ol className="relative border-l border-gray-200 dark:border-gray-700 space-y-6 ">
