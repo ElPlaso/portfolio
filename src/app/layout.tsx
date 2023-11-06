@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="snap-y scroll-auto">
+    <html lang="en" className="scroll-auto">
       <body className={inter.className}>{children}</body>
       <Analytics />
     </html>
