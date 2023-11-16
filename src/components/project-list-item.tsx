@@ -19,18 +19,21 @@ export default function ProjectListItem({ project }: { project: Project }) {
       <h3 className="text-lg mb-2 mt-1 font-semibold text-black dark:text-grayDark max-sm:text-sm ">
         {project.title}
       </h3>
-      {project.badges.map((badge) => (
-        <Badge key={badge} label={badge} />
-      ))}
+      <div className="flex w-full flex-wrap gap-2 items-center">
+        {project.badges.map((badge) => (
+          <Badge key={badge} label={badge} />
+        ))}
+      </div>
       <p className="text-base mt-2 font-normal max-sm:text-sm dark:text-grayDarkSecondary">
         {project.description}
       </p>
 
-      {project.href && (
-        <a
-          href={project.href}
-          target="_blank"
-          className={`inline-flex items-center 
+      <div>
+        {project.href && (
+          <a
+            href={project.href}
+            target="_blank"
+            className={`inline-flex items-center 
           mt-4 px-4 py-2 text-sm font-medium 
           bg-white border border-gray-200 
           rounded-lg hover:bg-gray-100 
@@ -41,26 +44,27 @@ export default function ProjectListItem({ project }: { project: Project }) {
           dark:bg-grayDarkFill dark:border-gray-600 
           dark:hover:text-blueDarkFill dark:hover:bg-grayDarkFill
           dark:focus:ring-gray-700 max-sm:text-xs`}
-        >
-          Visit{" "}
-          <svg
-            className="w-3 h-3 ml-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 10"
           >
-            {" "}
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"
-            />
-          </svg>
-        </a>
-      )}
+            Visit{" "}
+            <svg
+              className="w-3 h-3 ml-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              {" "}
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        )}
+      </div>
     </TimeLineCard>
   );
 }
