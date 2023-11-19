@@ -18,20 +18,20 @@ export default function Details() {
         <h3 className="font-bold">Allow me to introduce myself.</h3>
         <p className="dark:text-grayDarkSecondary">
           My name is Moo Plah Soe (Plaso) Kusay, and I am an aspiring software
-          engineer with a growing interest in web development. I am currently
-          studying for a major in Software Engineering at Victoria University of
-          Wellington, specialising in Networked Applications, and I am in my
-          final year. I enjoy skateboarding, playing bass, and playing chess,
-          among other things. Feel free to navigate the rest of my site to learn
-          more about my projects and experiences.
+          engineer with a growing interest in web development. I am currently an
+          alumnus of Victoria University of Wellington, where I&apos;ve recently
+          completed study for a BE(Hons) in Software Engineering. I enjoy
+          skateboarding, playing bass, and playing chess, among other things.
+          Feel free to navigate the rest of my site to learn more about my
+          projects and experiences.
         </p>
       </div>
       <div>
         <h3 className="font-bold">Check out my portfolio</h3>
         <p className="dark:text-grayDarkSecondary">
-          I have worked on a small number of React projects, including this one.
-          These projects were mainly for learning purposes, but I hope they can
-          be of use or entertainment to others.
+          I have worked on a small number of React projects. These projects were
+          mainly for learning purposes, but I hope they can be of use or
+          entertainment to others.
         </p>
       </div>
       <div>
