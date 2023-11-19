@@ -1,5 +1,4 @@
 import Welcome from "@/components/welcome";
-import Link from "next/link";
 
 export default function Home() {
   return (
