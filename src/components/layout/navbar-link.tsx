@@ -1,11 +1,15 @@
 "use client";
 
-import NavBarLink from "@/types/navbarlink";
+import NavBarLinkProps from "@/types/navbarlink";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function NavBarLink({ navbarLink }: { navbarLink: NavBarLink }) {
+export default function NavBarLink({
+  navbarLink,
+}: {
+  navbarLink: NavBarLinkProps;
+}) {
   const pathname = usePathname();
   const isActive = navbarLink.href === pathname;
 

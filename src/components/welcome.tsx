@@ -11,11 +11,11 @@ import Banner from "./banner";
 export default function Welcome() {
   return (
     <DetailsProvider>
-      <div className="space-y-16 w-full">
+      <div className="space-y-6 w-full">
         <AnimationWrapper>
           <Banner />
         </AnimationWrapper>
-        <div className="space-y-4">
+        <div className="space-y-4 max-sm:pb-8">
           <h1 className="text-black dark:text-grayDark text-2xl font-medium">
             Welcome to my website
           </h1>
