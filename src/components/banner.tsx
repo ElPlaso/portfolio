@@ -5,7 +5,7 @@ export default function Banner() {
   return (
     <div className="relative rounded-xl">
       <Image
-        src="/images/backdrop2.png"
+        src="/images/backdrop.png"
         alt="Backdrop"
         width={1080}
         height={607.5}
@@ -26,15 +26,11 @@ export default function Banner() {
           max-sm:h-[225px] max-sm:w-[225px]
           `}
       />
-      <div className="flex justify-end py-4 px-2 max-sm:mt-14 max-sm:justify-center gap-x-2">
+      <div className="flex justify-end px-2 py-4 max-sm:mt-14 max-sm:justify-center gap-x-2">
         <a
           href={"/cv.pdf"}
           target="_blank"
-          className="flex items-center gap-x-2 bg-white dark:bg-darkBackground
-          border border-gray-300 dark:border-grayDarkSecondary
-          rounded-full px-4 py-2 text-grayLight dark:text-blueDark
-          hover:bg-gray-100 dark:hover:bg-grayDarkFill text-sm max-sm:w-24 justify-between
-          "
+          className="flex items-center justify-between px-4 py-2 text-sm bg-white border border-gray-300 rounded-full gap-x-2 dark:bg-darkBackground dark:border-grayDarkSecondary text-grayLight dark:text-blueDark hover:bg-gray-100 dark:hover:bg-grayDarkFill max-sm:w-24 "
         >
           CV
           <svg
@@ -55,14 +51,11 @@ export default function Banner() {
         </a>
         <Link
           href="/portfolio"
-          className="flex items-center gap-x-2 bg-blue-500 dark:bg-blueDark 
-          rounded-full px-4 py-2 text-white dark:text-darkBackground 
-          active:bg-blue-600 dark:active:bg-blueDarkFill text-sm max-sm:w-24 justify-between
-          "
+          className="flex items-center justify-between px-4 py-2 text-sm text-white bg-blue-500 rounded-full gap-x-2 dark:bg-blueDark dark:text-darkBackground active:bg-blue-600 dark:active:bg-blueDarkFill max-sm:w-24 "
         >
           More
           <svg
-            className="w-4 h-4 dark:text-gray-800 text-white dark:group-hover:text-blue-500 group-hover:text-white"
+            className="w-4 h-4 text-white dark:text-gray-800 dark:group-hover:text-blue-500 group-hover:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
