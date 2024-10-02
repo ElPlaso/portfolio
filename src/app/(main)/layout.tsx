@@ -7,10 +7,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pb-8 pt-8 max-sm:pt-0 max-sm:pb-16">
+    <main className="flex flex-col items-center justify-between min-h-screen pt-8 pb-8 max-sm:pt-0 max-sm:pb-16">
       <div className="flex flex-col space-y-8 w-[700px] selection:max-md:mt-0 max-md:w-[100%] items-start justify-start">
         <NavBar />
-        <div className="px-4">
+        <div className="w-full px-4">
           <AnimationWrapper>{children}</AnimationWrapper>
         </div>
       </div>

@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function ProjectListItem({ project }: { project: Project }) {
   return (
     <TimeLineCard>
-      <div className="w-full mb-4 mt-2">
+      <div className="w-full mt-2 mb-4">
         <Image
           src={project.imageUrl ? project.imageUrl : "/images/default.png"}
           alt={`${project.title} image`}
@@ -16,15 +16,15 @@ export default function ProjectListItem({ project }: { project: Project }) {
         />
       </div>
 
-      <h3 className="text-lg mb-2 mt-1 font-semibold text-black dark:text-grayDark max-sm:text-sm ">
+      <h3 className="mt-1 mb-2 text-lg font-semibold text-black dark:text-grayDark max-sm:text-sm ">
         {project.title}
       </h3>
-      <div className="flex w-full flex-wrap gap-2 items-center">
+      <div className="flex flex-wrap items-center w-full gap-2">
         {project.badges.map((badge) => (
           <Badge key={badge} label={badge} />
         ))}
       </div>
-      <p className="text-base mt-2 font-normal max-sm:text-sm dark:text-grayDarkSecondary">
+      <p className="mt-2 text-base font-normal max-sm:text-sm dark:text-grayDarkSecondary">
         {project.description}
       </p>
 

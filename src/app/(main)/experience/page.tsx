@@ -42,9 +42,9 @@ export default async function ExperiencePage() {
       <h1 className="mb-4 text-2xl font-medium text-black dark:text-grayDark max-sm:text-xl shrink-0">
         Work & Education
       </h1>
-      <ol className="relative space-y-6 border-l border-gray-200 dark:border-gray-700 ">
+      <ol className="relative w-full px-4 space-y-6 border-l border-gray-200 dark:border-gray-700">
         {experiences.map((experience) => (
-          <li key={experience.title} className="ml-4">
+          <li key={experience.title} className="w-full">
             <ExperienceListItem experience={experience} />
           </li>
         ))}
