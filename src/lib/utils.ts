@@ -1,14 +1,7 @@
 import Experience from "@/types/experience";
 
-/**
- * Sorts an array of experience objects by date
- * Supports years in the format of "YYYY" and "YYYY-YYYY"
- *
- * @param years An array of strings; years in the format of "YYYY" and "YYYY-YYYY"
- * @returns An array of years in descending order
- */
-export function sortExperiencesByDate(experiences: Experience[]): void {
-  experiences.sort((a, b) => {
+export function sortExperiencesByDate(experiences: Experience[]): Experience[] {
+  return experiences.sort((a, b) => {
     const aYear = parseInt(a.date?.split("-")[0]);
     const bYear = parseInt(b.date?.split("-")[0]);
 
