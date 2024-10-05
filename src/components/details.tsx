@@ -17,31 +17,33 @@ export default function Details() {
       <div>
         <h3 className="font-bold">Allow me to introduce myself.</h3>
         <p className="dark:text-grayDarkSecondary">
-          My name is Moo Plah Soe (Plaso) Kusay, and I am an aspiring software
-          engineer with a growing interest in web development. I am currently an
-          alumnus of Victoria University of Wellington, where I&apos;ve recently
-          completed study for a BE(Hons) in Software Engineering. I enjoy
-          skateboarding, playing bass, and playing chess, among other things.
-          Feel free to navigate the rest of my site to learn more about my
-          projects and experiences.
+          My name is Plaso Kusay, and I am a software engineer with an interest
+          in full-stack web development and user interface programming. I am
+          passionate about creating applications and software solutions that are
+          both meaningful and easy to use. I am an alumnus of Victoria
+          University of Wellington, where I graduated with an Honours degree in
+          Software Engineering. I enjoy skateboarding, bouldering, making music,
+          and playing chess, among other things. Feel free to navigate the rest
+          of my site to learn more about my projects and experiences.
         </p>
       </div>
       <div>
         <h3 className="font-bold">Check out my portfolio</h3>
         <p className="dark:text-grayDarkSecondary">
-          I have worked on a small number of React projects. These projects were
-          mainly for learning purposes, but I hope they can be of use or
-          entertainment to others.
+          I have worked on a small number of mainly web-based projects. These
+          projects were mainly for learning purposes, but I hope they can be of
+          use or entertainment to others.
         </p>
       </div>
       <div>
         <h3 className="font-bold">If you want to find out more...</h3>
         <p className="dark:text-grayDarkSecondary">
-          Check out my GitHub page for other projects I have worked on,
-          including non-React projects, or contact me via Email or LinkedIn.
+          Check out my GitHub page for other projects I have worked on, or
+          contact me via Email or LinkedIn. I am also happy to collaborate on
+          some side projects, so feel free to reach out to me.
         </p>
       </div>
-      <ul className="list-disc ml-10 break-all">
+      <ul className="ml-10 break-all list-disc">
         <li>
           <span className="hover:underline">
             <a href="https://github.com/ElPlaso" target="_blank">
