@@ -35,7 +35,7 @@ export default async function PortfolioPage() {
   return (
     <>
       <h1 className="mb-4 text-2xl font-medium text-black dark:text-grayDark max-sm:text-xl shrink-0">
-        Personal Web Projects
+        Personal Projects
       </h1>
       <ol className="relative w-full px-4 space-y-6 border-l border-gray-200 dark:border-gray-700">
         {projects.map((project) => (

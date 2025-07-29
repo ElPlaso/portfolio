@@ -40,7 +40,7 @@ export default async function ExperiencePage() {
   return (
     <>
       <h1 className="mb-4 text-2xl font-medium text-black dark:text-grayDark max-sm:text-xl shrink-0">
-        Work & Education
+        Experience
       </h1>
       <ol className="relative w-full px-4 space-y-6 border-l border-gray-200 dark:border-gray-700">
         {experiences.map((experience) => (
